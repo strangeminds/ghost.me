@@ -1,15 +1,14 @@
 <!doctype html>
-<head>
-	<title>g h o s t</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
+<html>
+	<head>
+		<title> g h o s t </title>
+		<meta charset="utf-8" />
+	<! -- credit: code from http://acko.net/blog/js1k-demo-the-making-of/ -->
+	</head>
+	<body>
+		<canvas id="c"></canvas>
+		<script>
+f=Math;d=document;_=d.body;_.style.background="#000";e=_.children[0];e.width=w=innerWidth-10;e.height=h=innerHeight-25;g=e.getContext("2d");t=w/h;with(g){globalCompositeOperation="lighter";scale(w/2/t,h/2);translate(t,1);lw=45/h;$=p=m=q=r=d=0;g=u=-8;setInterval(function(){if(--d<0){Q=f.random;e=Q()*18-9;r2=Q()*18-9;u2=Q()*18-9;d=70}function A(C,B){return C+(B-C)*.04}p=A(p,e);m=A(m,r2);g=A(g,u2);q=A(q,p);r=A(r,m);u=A(u,g);a=f.atan2(q,-u*2);b=f.atan2(r*2,f.sqrt(u*u+q*q));$+=.05;clearRect(-t,-1,2*t,2);for(i=16;i;--i){v=0;for(j=45;j;){c=f.cos;s=f.sin;j--;A=$-j*.03-i*3;n=c(A+s(A*.31))*2+s(A*.83)*3+A*.02;o=s(A*.7)-c(3+A*.23)*3;A=f.sqrt(j+.2);x=c(n)*c(o)*A-q;y=s(n)*c(o)*A-r;z=s(o)*A-u;n=c(a);o=s(a);k=x*n+z*o;A=z*n-x*o;n=c(b);o=s(b);l=y*n+A*o;z=A*n-y*o;h=!j;lineTo(k/z,l/z);lineWidth=lw*(2+h)/z;n=f.round;A=n(45-j)*(1+h+f.max(0,s($*6-j/8)-.95)*70);strokeStyle="rgb("+n(A*(s(h+i+$*.15)+1))+","+n(A*(h+s(i-1)+1))+","+n(A*(h+s(i-1.3)+1))+")";if(z>.1){v++&&stroke()}else{v=0}beginPath();moveTo(k/z,l/z)}}},33)};</script>
 
-<!-- particles.js container --> <div id="particles-js"></div> <!-- stats - count particles -->
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script type="text/javascript" src="main.js"></script>
-</body>
+	</body>
 </html>
